@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Card from './components/Card';
+import img1 from './img/img1.jpg';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Card
+        image={img1}
+        title="Заголовок карточки 1"
+        description="Описание карточки"
+        buttonText="Нажми меня"
+      />
+
+      <Card
+        title="Заголовок карточки 2"
+        description="Другое описание"
+        buttonText="Нажми меня"
+      />
     </div>
   );
 }
